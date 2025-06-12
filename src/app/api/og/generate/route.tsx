@@ -3,7 +3,7 @@ import { baseURL, person } from "@/resources";
 
 export const runtime = "edge";
 
-export async function GET(request: Request) {
+async function handler(request: Request) {
   let url = new URL(request.url);
   let title = url.searchParams.get("title") || "Portfolio";
   /*
@@ -107,3 +107,5 @@ export async function GET(request: Request) {
     },
   );
 }
+
+export const GET = handler;
