@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import * as cookie from "cookie";
 
+interface AuthRequestBody {
+  password: string;
+}
+
 export async function POST(request: NextRequest) {
-  const body = await request.json();
+  const body = await request.json() as AuthRequestBody;
   const { password } = body;
   const correctPassword = process.env.PAGE_ACCESS_PASSWORD;
 
