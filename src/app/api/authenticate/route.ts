@@ -5,7 +5,9 @@ interface AuthRequestBody {
   password: string;
 }
 
-export async function POST(request: NextRequest) {
+export const runtime = 'edge';
+
+async function handler(request: NextRequest) {
   const body = await request.json() as AuthRequestBody;
   const { password } = body;
   const correctPassword = process.env.PAGE_ACCESS_PASSWORD;
@@ -34,3 +36,5 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ message: "Incorrect password" }, { status: 401 });
   }
 }
+
+export const POST = handler;
