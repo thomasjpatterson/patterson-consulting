@@ -1,20 +1,20 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Thomas",
+  lastName: "Patterson",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Product Executive",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "thomasjpatterson@gmail.com",
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to my Newsletter</>,
   description: (
     <>
@@ -30,17 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/thomasjpatterson",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/thomjpatterson/",
   },
   {
     name: "Email",
@@ -55,16 +50,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
-  featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
+  headline: <>Architecting Tomorrow's Products Today</>,
   subline: (
     <>
-      I am Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I&apos;m Thomas, from systems administrator to AI pioneer I build the platforms that protect what matters most
     </>
   ),
 };
@@ -82,7 +71,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -90,9 +79,17 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        As a passionate product leader with deep experience in cybersecurity, I am driven by my
+        enthusiasm for technology and my desire to drive innovation and growth. With a strong
+        understanding of the latest technologies and a track record of successful product launches
+        and growth strategies, I am highly skilled in identifying new opportunities and developing
+        effective solutions.
+        <br />
+        <br />
+        In addition to my technical expertise, I have also served on advisory boards and as a
+        mentor, sharing my knowledge and experience with others in the industry. I am constantly
+        seeking out new challenges and am committed to continuing my growth and development as a
+        product leader in the dynamic field of cybersecurity and technology.
       </>
     ),
   },
@@ -101,41 +98,52 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "VikingCloud",
+        timeframe: "2023 - Present",
+        role: "Vice President, Product Management",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Responsible for the entire platform strategies for all products and services.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Doubled revenue by introducing an evolution of several product lines into a single platform
+            empowering customers to manage their entire cybersecurity program from a single console.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Confidential 3D Printing Company",
+        timeframe: "2022 - Present",
+        role: "Product Advisor & Mentor",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Provided expertise in product, marketing, and launch of two successful products.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Continuing to provide subject matter expertise for a yet to be announced new product.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Vectra AI",
+        timeframe: "2022 - 2023",
+        role: "Principal Product Manager",
+        achievements: [
+          <>
+            Productized interal tooling into a full fledged Managed Detection and Response service.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Other Notable Companies",
+        timeframe: "2011 - 2022",
+        role: "Product Management",
+        achievements: [
+          <>
+            SecurityScorecard, GoSecure, Trustwave, & ManTech
           </>,
         ],
         images: [],
@@ -147,50 +155,64 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Western Governors University",
+        description: <>MBA with concentration in IT Management</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Winthrop University",
+        description: <>Business Administration with concentration in Computer Information Systems.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Published Articles",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "RT Insights",
+        description: <><a href="https://www.rtinsights.com/how-real-time-cyber-risk-intelligence-is-transforming-enterprise-security/">How Real-Time Cyber Risk Intelligence is Transforming Enterprise Security</a></>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Government Fleet",
+        description: <><a href="https://www.government-fleet.com/10241456/third-party-risk-in-government-fleet-operations-whos-really-behind-your-data">Third-Party Risk in Government Fleet Operations: Who is Really Behind Your Data?</a></>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
+      },
+      {
+        title: "Technology Reseller News",
+        description: <><a href="https://telecomreseller.com/2025/05/27/how-to-spot-and-fix-cyber-risks-in-your-telecom-supply-chain/">How to Spot and Fix Cyber Risks in Your Telecom Supply Chain</a></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Industry Today",
+        description: <><a href="https://industrytoday.com/building-cyber-resilience-in-manufacturing/">Building Cyber Resilience in Manufacturing</a></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "The HR Director",
+        description: <><a href="https://www.thehrdirector.com/predictive-analytics-can-enhance-talent-management-employee-retention/">Predictive Analytics Can Enhance Talent Management and Employee Retention</a></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "VikingCloud Blog Articles",
+        description: <>
+        <a href="https://www.vikingcloud.com/blog/focus-where-it-matters-the-power-of-prioritization-for-risk-based-security/">Focus Where It Matters: The Power of Prioritization for Risk-Based Security</a>
+        <br />
+        <a href="https://www.vikingcloud.com/blog/from-chaos-to-clarity-taming-the-cyber-storm">From Chaos to Clarity: Taming the Cyber Storm</a>
+        <br />
+        <a href="https://www.vikingcloud.com/blog/the-human-element-in-risk-based-security-building-a-culture-of-cyber-resilience">The Human Element in Risk-Based Security: Building a Culture of Cyber Resilience</a>
+        <br />
+        <a href="https://www.vikingcloud.com/blog/risk-based-vs-compliance-based-security-why-one-size-doesnt-fit-all">Risk-Based vs. Compliance-Based Security: Why One Size Doesn’t Fit All</a>
+        <br />
+        <a href="https://www.vikingcloud.com/blog/product-team-spotlight-thomas-patterson">Product Team Spotlight: Thomas Patterson</a>
+        </>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
     ],
   },
