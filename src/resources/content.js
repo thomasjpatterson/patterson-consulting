@@ -51,9 +51,14 @@ const home = {
   title: `${person.name}&apos;s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Architecting Tomorrow&apos;s Products Today</>,
+  featured: {
+    display: true,
+    title: <>Recent published article: <strong className="ml-4">RT Insights</strong></>,
+    href: "https://www.rtinsights.com/how-real-time-cyber-risk-intelligence-is-transforming-enterprise-security",
+  },
   subline: (
     <>
-      I&apos;m Thomas, from systems administrator to AI pioneer I build the platforms that protect what matters most
+      I&apos;m Thomas, from sysadmin to product visionary I build the platforms and products that matters most.
     </>
   ),
 };

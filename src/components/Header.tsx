@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
 
@@ -59,7 +60,29 @@ export const Header = () => {
         padding="8"
         horizontal="center"
         data-border="rounded"
+        style={{ position: "relative" }}
       >
+        <div style={{
+          position: "absolute",
+          left: 0,
+          top: "50%",
+          transform: "translateY(-50%)",
+          zIndex: 10,
+          height: "180px",
+          width: "180px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }}>
+          <Image
+            src="/trademarks/logo.png"
+            alt="Patterson Consulting Logo"
+            priority={true}
+            height={120}
+            width={120}
+            style={{ objectFit: "contain" }}
+          />
+        </div>
         <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
           {display.location && <Flex hide="s">{person.location}</Flex>}
         </Flex>
