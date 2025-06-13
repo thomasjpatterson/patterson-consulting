@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "patterson-consulting" generated at 2025-06-13T00:32:06.969Z.
