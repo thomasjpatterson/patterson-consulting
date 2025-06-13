@@ -4,7 +4,7 @@ const baseURL = "https://patterson.consulting";
 const routes = {
   "/": true,
   "/about": true,
-  "/work": true,
+  "/work": false,
   "/blog": false,
   "/gallery": false,
 };
@@ -18,7 +18,7 @@ const display = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": false,
+  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
 // Import and set font for each variant
@@ -196,8 +196,9 @@ const schema = {
 
 // social links
 const sameAs = {
-  linkedin: "https://www.linkedin.com/in/thomjpatterson/",
-  github: "https://github.com/thomasjpatterson",
+  threads: "https://www.threads.com/@once_ui",
+  linkedin: "https://www.linkedin.com/company/once-ui/",
+  discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 
 export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, meta, schema, sameAs, effects, dataStyle };

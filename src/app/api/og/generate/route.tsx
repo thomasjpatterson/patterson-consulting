@@ -1,9 +1,7 @@
 import { ImageResponse } from "next/og";
 import { baseURL, person } from "@/resources";
 
-
-
-async function handler(request: Request) {
+export async function GET(request: Request) {
   let url = new URL(request.url);
   let title = url.searchParams.get("title") || "Portfolio";
   /*
@@ -107,5 +105,3 @@ async function handler(request: Request) {
     },
   );
 }
-
-export const GET = handler;
