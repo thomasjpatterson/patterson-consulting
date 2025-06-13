@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { baseURL, person } from "@/resources";
 
-export const runtime = "edge";
+
 
 async function handler(request: Request) {
   let url = new URL(request.url);
