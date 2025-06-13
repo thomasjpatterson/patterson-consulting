@@ -32,7 +32,7 @@
     "@opennextjs/cloudflare": "1.2.1",
     "postcss": "8.5.3",
     "tailwindcss": "3.4.17",
-    "wrangler": "4.16.1",
+    "wrangler": "4.20.0",
     "@types/cookie": "^0.6.0",
     "@types/node": "^20.17.30",
     "@types/react": "^18.3.20",
